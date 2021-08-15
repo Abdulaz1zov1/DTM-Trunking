@@ -1,0 +1,60 @@
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  .login{
+    margin-bottom: 20px;
+    .inputLogin{
+      letter-spacing: 1px;
+      width: 130%;
+      font-size: 14px;
+      padding: 10px 10px;
+      font-family: 'Roboto', sans-serif;
+      color: #263238;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+      outline: none;
+      background-color: transparent;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 14px;
+      }
+    }
+  }
+  .parol{
+    .inputPassword{
+      letter-spacing: 1px;
+      width: 130%;
+      font-size: 14px;
+      padding: 10px 10px;
+      font-family: 'Roboto', sans-serif;
+      color: #263238;
+      margin-bottom: 20px;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+      outline: none;
+      background-color: transparent;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 14px;
+      }
+
+    }
+
+  }
+  .btn{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-left: 60px;
+    border-radius: 5px;
+    &:hover{
+      cursor: pointer;
+      color: red;
+      background-color: transparent;
+    }
+
+  }
+}

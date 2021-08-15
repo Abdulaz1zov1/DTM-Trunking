@@ -1,0 +1,319 @@
+.wr {
+  background-image: url("../../public/section3.jpg");
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  margin-top: 40px;
+
+
+  .overlay {
+    height: auto;
+    width: 100%;
+    background-color: rgba(29, 35, 63, 0.8);
+    .innerOverlay{
+
+
+    .inDisplay {
+      display: flex;
+      flex-direction: row;
+      margin-left: 5%;
+      padding-top: 10%;
+      padding-bottom: 5%;
+
+      .left {
+        padding-top: 3%;
+
+        width: 35%;
+        //background: #CD241D;
+        height: auto;
+
+        .grayTitle {
+          color: #9EA9B3;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+
+        .leftTitle {
+          color: white;
+          padding-bottom: 15px;
+          font-size: 42px;
+          font-family: sans-serif;
+
+          span {
+            font-weight: bold;
+          }
+        }
+        .leftText{
+          font-size: 18px;
+          padding-top: 20px;
+          color:  #9EA9B3;
+        }
+        .btn{
+          border: 1px solid #CD241D;
+          border-radius: 10px;
+          margin-top: 40px;
+          background-color: #CD241D;
+          display: inline-block;
+          padding: 20px 40px;
+          .btnDisplay{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btnText{
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+              padding-right: 5px;
+            }
+            .btnIcon{
+              color: white;
+            }
+          }
+          &:hover{
+            background: transparent;
+
+          }
+        }
+      }
+      .right{
+        height: auto;
+        width: 65%;
+        position: relative;
+        .carusel{
+
+          width: 100%;
+          height: auto;
+
+          .caruselItem {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 90%;
+            background: white;
+            padding-top: 60px;
+            height: 50vh;
+            padding-bottom: 60px;
+
+            .caruselIcon {
+              font-size: 52px;
+              color: #249126;
+            }
+
+            .caruselTitle {
+              font-size: 22px;
+              font-weight: 600;
+            }
+
+            .caruselText {
+              width: 80%;
+              padding-top: 15px;
+              color: #8F8F8F;
+              text-align: center;
+            }
+
+            .caruselBtn {
+              padding-top: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .readMore {
+                font-size: 18px;
+                color: #CD241D;
+
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              .readMoreIcon {
+                color: #CD241D;
+                padding-left: 5px;
+              }
+            }
+          }
+
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1276px) {
+  .wr {
+    .overlay {
+      .innerOverlay {
+        .inDisplay {
+          .left {
+            .grayTitle {
+              font-size: 19px;
+            }
+
+            .leftTitle {
+              font-size: 38px;
+            }
+
+            .leftText {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:1031px ) {
+  .wr {
+    .overlay {
+      .innerOverlay {
+        .inDisplay {
+          .left {
+            .leftTitle {
+              font-size: 32px;
+            }
+
+            .leftText {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 930px) {
+  .wr {
+    .overlay {
+      .innerOverlay {
+        .inDisplay {
+          .left {
+            .leftTitle {
+              font-size: 28px;
+            }
+
+            .leftText {
+              font-size: 18px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 868px) {
+  .wr {
+    .overlay {
+      .innerOverlay {
+
+
+        .inDisplay {
+          .left {
+            .leftTitle {
+              font-size: 26px;
+            }
+
+            .leftText {
+              font-size: 18px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .wr{
+    background-position-x: -500px;
+    .overlay{
+      .innerOverlay{
+        .inDisplay{
+          flex-direction: column;
+          .left{
+            width: 100%;
+             .grayTitle{
+               padding-bottom: 20px;
+             }
+            .leftTitle{
+              font-size: 27px;
+            }
+            .leftText{
+              width: 80%;
+              padding-bottom: 40px;
+            }
+            .btn{
+              display: none;
+            }
+          }
+          .right{
+            width: 100%;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 380px) {
+  .wr{
+
+    .overlay{
+
+      .innerOverlay{
+        .inDisplay{
+
+          .left{
+            width: 100%;
+            .grayTitle{
+              padding-bottom: 20px;
+            }
+            .leftTitle{
+              font-size: 24px;
+              width: 80%;
+            }
+            .leftText{
+              width: 80%;
+              padding-bottom: 40px;
+            }
+            .btn{
+              display: none;
+            }
+          }
+          .right{
+            .carusel{
+              .caruselItem{
+                .caruselIcon{
+                  font-size: 32px;
+                }
+                .caruselTitle{
+                  font-size: 20px;
+                  text-align: center;
+                }
+                .readMore{
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 300px) {
+  @media (max-width: 650px) {
+    .wr {
+      background-position-x: -500px;
+
+      .overlay {
+
+      }
+    }
+  }
+}

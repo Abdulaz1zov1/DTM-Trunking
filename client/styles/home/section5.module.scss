@@ -1,0 +1,204 @@
+.wr {
+  background-image: url("../../public/truckk.jpg");
+  background-size: cover;
+  height: auto;
+  width: 100%;
+
+  .overlay {
+    background-color: rgba(29, 35, 63, 0.9);
+    height: auto;
+    padding-bottom: 140px;
+    .wrapper {
+      margin-left: 10%;
+      width: 80%;
+      padding-top: 80px;
+
+      .mTitle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .grayTitle {
+          color: #9EA9B3;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+
+
+        .boldTitle {
+          font-size: 38px;
+          font-weight: 600;
+          color: white;
+        }
+      }
+
+      .inGrid {
+        .grid {
+          margin-top: 40px;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-gap: 60px;
+
+          .gridItem {
+            border: 1px solid #848484;
+            height: 55vh;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:nth-child(2){
+              .gridCircle{
+                height: 100px;
+                width: 100px;
+                background-image: url("../../public/picture2.jpg");
+                background-size: cover;
+                background-position-x: 0;
+              }
+            }
+            &:nth-child(3){
+              .gridCircle{
+                height: 100px;
+                width: 100px;
+                background-image: url("../../public/picture3.jpg");
+                background-size: cover;
+                background-position-x: 0;
+
+              }
+            }
+
+            .gridCircle {
+              margin-top: 40px;
+              position: relative;
+
+              border-radius: 50px;
+              background-color: white;
+              height: 100px;
+              width: 100px;
+              background-image: url("../../public/review.jpg");
+              background-size: cover;
+              background-position-x: -9px;
+              .innerCircle1{
+                text-align: center;
+                display: flex;
+                font-size: 56px;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                background: #CD241D;
+                position: relative;
+                top: 50px;
+                left: 70px;
+                height: 50px;
+                width: 50px;
+                border-radius: 30px;
+                padding-top: 10px;
+              }
+
+              .innerCircle2 {
+                text-align: center;
+                display: flex;
+                font-size: 56px;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                background: #CD241D;
+                position: relative;
+                top: 50px;
+                left: 70px;
+                height: 50px;
+                width: 50px;
+                border-radius: 30px;
+                padding-top: 10px;
+              }
+
+              .innerCircle3 {
+                text-align: center;
+                display: flex;
+                font-size: 56px;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                background: #CD241D;
+                position: relative;
+                top: 50px;
+                left: 70px;
+                height: 50px;
+                width: 50px;
+                border-radius: 30px;
+                padding-top: 10px;
+              }
+
+            }
+
+            .gridTitle {
+              position: relative;
+              font-size: 20px;
+              font-weight: bold;
+              color: white;
+              padding-top: 20px;
+            }
+            .gridTitle2{
+              color: white;
+            }
+            .line{
+              margin-top: 20px;
+              background: #CD241D;
+              height: 1px;
+              width: 20%;
+            }
+
+            .gridText {
+              padding-top: 20px;
+              color: #BFBFC5;
+              text-align: center;
+              width: 90%;
+            }
+
+            .gridBtn {
+              padding-top: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .readMore {
+                font-size: 18px;
+                color: #CD241D;
+
+              }
+
+              .readMoreIcon {
+                color: #CD241D;
+                padding-left: 5px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .wr{
+
+    .overlay{
+
+      .wrapper{
+        .mTitle{
+          .boldTitle{
+            font-size: 28px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .wr{
+    background-position-x: -600px;
+
+
+
+  }
+}

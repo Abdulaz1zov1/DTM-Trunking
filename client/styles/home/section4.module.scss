@@ -1,0 +1,238 @@
+.wr{
+  background: #F4F7FC;
+  padding-top: 80px;
+  height: 75vh;
+
+
+  .partTwo{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 40px;
+    position: relative;
+
+    .mTitle {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .grayTitle {
+        color: #9EA9B3;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+
+      .boldTitle {
+        font-size: 38px;
+        font-weight: 600;
+        color: #232323;
+      }
+    }
+    .grid{
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 60px;
+
+      .gridItem{
+        width: 100%;
+        height: 35vh;
+        border-radius: 20px;
+        background-color: white;
+        position: relative;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        .innerIcon{
+          color: #CD241D;
+          font-size: 46px;
+          margin-bottom: 20px;
+        }
+        .innerTitle{
+          margin-bottom: 20px;
+          font-size: 42px;
+          padding-left: 10px;
+          font-weight: bold;
+        }
+        .innerText{
+          margin-bottom: 20px;
+          width: 90%;
+          margin-left: 5%;
+          text-align: center;
+          font-size: 24px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+  //.wrapper{
+  //  margin-left: 10%;
+  //  width: 80%;
+  //  padding-top: 80px;
+  //  .mTitle{
+  //    display: flex;
+  //    align-items: center;
+  //    flex-direction: column;
+  //    .grayTitle{
+  //      color: #9EA9B3;
+  //      text-transform: uppercase;
+  //      font-size: 20px;
+  //    }
+  //    .mainTitle{
+  //      font-size: 38px;
+  //
+  //    }
+  //    .boldTitle{
+  //      font-size: 38px;
+  //      font-weight: 600;
+  //    }
+  //  }
+  //  .inGrid{
+  //    .grid{
+  //      margin-top: 40px;
+  //      display: grid;
+  //      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  //      grid-gap: 60px;
+  //      .gridItem{
+  //        height: 65vh;
+  //        border-radius: 20px;
+  //        background-color: white;
+  //        display: flex;
+  //        flex-direction: column;
+  //        align-items: center;
+  //        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  //        .gridImg1{
+  //          border-radius: 20px;
+  //          margin-top: 2%;
+  //          width: 96%;
+  //          background-image: url("../../public/SPAIN.jpg");
+  //          background-size: cover;
+  //          height: 200px;
+  //        }
+  //        .gridImg2{
+  //          border-radius: 20px;
+  //          margin-top: 2%;
+  //          width: 96%;
+  //          background-image: url("../../public/aus.jpg");
+  //          background-size: cover;
+  //          height: 200px;
+  //        }
+  //        .gridImg3{
+  //          border-radius: 20px;
+  //          margin-top: 2%;
+  //          width: 96%;
+  //          background-image: url("../../public/canadaa.jpg");
+  //          background-size: cover;
+  //          height: 200px;
+  //        }
+  //
+  //        .gridCircle{
+  //          position: relative;
+  //          top: -50px;
+  //          border-radius: 50px;
+  //          background-color: white;
+  //          height: 100px;
+  //          width: 100px;
+  //          -webkit-box-shadow: 1px 1px 1px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  //          -moz-box-shadow: 1px 1px 1px 6px #ccc; /* Firefox 3.5 - 3.6 */
+  //          box-shadow: 1px 3px 8px 3px #ccc;
+  //          display: flex;
+  //          align-items: center;
+  //          justify-content: center;
+  //          .innerCircle1{
+  //            background-image: url("../../public/spanish-flag-2.gif");
+  //            background-size: cover;
+  //            height: 90px;
+  //            width: 90px;
+  //            border-radius: 45px;
+  //          }
+  //          .innerCircle2{
+  //            background-image: url("../../public/aus-flag.gif");
+  //            background-size: cover;
+  //            height: 90px;
+  //            width: 90px;
+  //            border-radius: 45px;
+  //          }
+
+
+}
+@media (max-width: 1225px) {
+  .wr{
+    height: 120vh;
+    .partTwo{
+
+    }
+  }
+}
+@media (max-width: 990px) {
+  .wr{
+    .partTwo{
+      .mTitle{
+        .boldTitle{
+          font-size: 32px;
+        }
+      }
+      .grid{
+        .gridItem{
+          .innerIcon{
+            font-size: 40px;
+          }
+          .innerTitle{
+            font-size: 32px;
+          }
+          .innerText{
+            font-size: 22px;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 650px) {
+  .wr{
+    .partTwo{
+      .mTitle{
+        .boldTitle{
+          font-size: 28px;
+          text-align: center;
+        }
+      }
+      .grid{
+        .gridItem{
+          .innerIcon{
+            font-size: 34px;
+          }
+          .innerTitle{
+            font-size: 28px;
+            text-align: center;
+          }
+          .innerText{
+            font-size: 18px;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 575px) {
+  .wr{
+   height: 200vh;
+    .partTwo{
+      padding-top: 0;
+    }
+  }
+}

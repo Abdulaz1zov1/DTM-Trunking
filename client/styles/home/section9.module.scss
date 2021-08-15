@@ -1,0 +1,234 @@
+
+@import "styles/constants";
+
+.wr {
+  //background-image: url("../../public/section9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  height: 65vh;
+  width: 100%;
+  .overlay {
+    //height: 70vh;
+    //width: 100%;
+    //background-color: rgba(29, 35, 63, 0.9);
+
+
+    .projects {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      .mTitle {
+
+        color: black;
+        font-size: 36px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+
+      }
+
+
+    }
+
+    .wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 50vh;
+      margin-left: 10%;
+      .rec.rec-arrow {
+        border-radius: 0;
+      }
+
+
+      .rowItem1{
+
+            background-size: 160px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 200px;
+            background-image: url(../../public/xpo.jpg);
+            background-repeat: no-repeat;
+            background-color: rgba(250,250,250, 0.2);
+            background-position: center;
+            border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+
+
+
+
+      }
+      .rowItem2{
+            background-image: url(../../public/partners/land.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 190px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 200px;
+            position: relative;
+            background-color: rgba(250,250,250, 0.2);
+            border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+
+
+      }
+      .rowItem3{
+        background-image: url(../../public/home/amazon.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color: rgba(250,250,250, 0.2);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+      }
+      .rowItem4{
+        background-image: url(../../public/home/ups.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color: rgba(250,250,250, 0.2);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+
+      }
+      .rowItem5{
+        background-image: url(../../public/xpo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color: rgba(250,250,250, 0.2);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+
+      }
+      .rowItem6{
+        background-image: url(../../public/jbhunt.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color: rgba(250,250,250, 0.2);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+      }
+      .rowItem7{
+        background-image: url(../../public/echo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color: rgba(250,250,250, 0.2);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+      }
+      .rowItem8{
+        background-image: url(../../public/c.h.hunt.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color: rgba(250,250,250, 0.2);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        &:hover{
+          cursor: pointer;
+
+        }
+      }
+
+      //
+      //  &:hover {
+      //
+      //    cursor: pointer;
+      //  }
+      //}
+
+    }
+  }
+}
+@media (max-width: 900px) {
+  .wr{
+    .overlay{
+      .projects{
+        .mTitle{
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+

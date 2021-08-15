@@ -1,0 +1,162 @@
+.wrapper {
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #FFFEF7;
+  background-image: url('../../public/volwo.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  .sideBar {
+    position: relative;
+    background-color: white;
+    height: auto;
+    margin-top: 60px;
+    border: 1px dotted gray;
+    width: 40%;
+    margin-left: 30%;
+    -webkit-box-shadow: 1px 1px 1px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 1px 1px 1px 6px #ccc; /* Firefox 3.5 - 3.6 */
+    box-shadow: 1px 3px 8px 3px #ccc;
+
+
+    .mainTitle{
+      color: white;
+      background-color: #1E243F;
+      width: 100%;
+      line-height: 15vh;
+      text-align: center;
+      height: 15vh;
+      font-size: 32px;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .buttons {
+
+      .btnTitle {
+        font-size: 20px;
+        padding-left: 15px;
+        font-style: italic;
+      }
+
+      .display {
+        margin-bottom: 40px;
+        padding-top: 20px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .btn {
+          background-color: #CD241D;
+          padding: 10px 20px;
+          color: white;
+          font-size: 20px;
+          transition: .3s all ease-in-out;
+          &:focus {
+            background-color: transparent;
+            color: black;
+            border: 1px solid #CD241D;
+          }
+        }
+      }
+
+    }
+
+    .wr {
+      .inputs {
+        position: relative;
+        padding: 20px;
+        display: inline-block;
+
+        height: 40vh;
+
+        .text {
+          margin-top: 30px;
+
+          textarea{
+            letter-spacing: 1px;
+            width: 130%;
+            font-size: 14px;
+            padding: 10px 10px;
+            font-family: 'Roboto', sans-serif;
+            color: #263238;
+            margin-bottom: 20px;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+            outline: none;
+            background-color: transparent;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              font-size: 14px;
+            }
+          }
+        }
+
+        .title {
+          input {
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            width: 130%;
+            font-size: 14px;
+            padding: 10px 10px;
+            font-family: 'Roboto', sans-serif;
+            color: #263238;
+            margin-bottom: 20px;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+            outline: none;
+            background-color: transparent;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              font-size: 14px;
+            }
+          }
+        }
+        .img{
+          width: 60%;
+        }
+      }
+
+      .submit {
+        position: relative;
+        margin: 20px;
+        font-size: 20px;
+        margin-top: 30px;
+        .done{
+          color: white;
+          padding: 5px 25px;
+          background-color: #CD241D;
+          border-radius: 10px;
+          border:  none;
+          &:focus {
+            background-color: transparent;
+            color: black;
+            border: 1px solid #CD241D;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1377px) {
+  .wrapper{
+    .sideBar{
+      .wr{
+        .inputs{
+          .text{
+            textarea{
+              width: 100%;
+
+            }
+          }
+          .title{
+            input{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

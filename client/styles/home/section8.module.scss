@@ -1,0 +1,229 @@
+.wr{
+  height: auto;
+  padding-bottom: 100px;
+  .wrapper{
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 80px;
+    .mTitle{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .grayTitle{
+        color: #9EA9B3;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      .mainTitle{
+        font-size: 38px;
+        text-align: center;
+
+      }
+      .boldTitle{
+        font-size: 38px;
+        font-weight: 600;
+      }
+    }
+    .inGrid{
+      .grid{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 60px;
+        .gridItem{
+          padding-bottom: 20px;
+          height: auto;
+          border-radius: 20px;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          .gridImg1{
+            border-radius: 20px;
+            margin-top: 2%;
+            width: 96%;
+
+
+            background-size: cover;
+            height: 200px;
+          }
+          .gridImg2{
+            border-radius: 20px;
+            margin-top: 2%;
+            width: 96%;
+            background-size: cover;
+            height: 200px;
+          }
+          .gridImg3{
+            border-radius: 20px;
+            margin-top: 2%;
+            width: 96%;
+            background-size: cover;
+            height: 200px;
+          }
+
+          .gridCircle{
+            position: relative;
+            top: -50px;
+            border-radius: 50px;
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            -webkit-box-shadow: 1px 1px 1px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow: 1px 1px 1px 6px #ccc; /* Firefox 3.5 - 3.6 */
+            box-shadow: 1px 3px 8px 3px #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .innerCircle1{
+              background-image: url("../../public/spanish-flag-2.gif");
+              background-size: cover;
+              height: 90px;
+              width: 90px;
+              border-radius: 45px;
+            }
+            .innerCircle2{
+              background-image: url("../../public/aus-flag.gif");
+              background-size: cover;
+              height: 90px;
+              width: 90px;
+              border-radius: 45px;
+            }
+            .innerCircle3{
+              background-image: url("../../public/canada-flag.gif");
+              background-size: cover;
+              background-position-x: -20px;
+              height: 90px;
+              width: 90px;
+              border-radius: 45px;
+            }
+
+          }
+          .gridTitle{
+            position: relative;
+            top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .gridText{
+            color: #848484;
+            text-align: justify;
+            width: 90%;
+            position: relative;
+            top: 55px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5; /* number of lines to show */
+            -webkit-box-orient: vertical;
+          }
+          .gridBtn{
+
+            padding-top: 80px;
+
+            .btnText{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .readMore{
+                font-size: 18px;
+                color: #CD241D;
+                &:hover{
+                  color: black;
+                  cursor: pointer;
+                }
+
+              }
+              .readMoreIcon{
+                color: #CD241D;
+                padding-left: 5px;
+
+              }
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1450px) {
+  .wr{
+    .wrapper{
+       .inGrid{
+         .grid{
+           .gridItem{
+           }
+         }
+       }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .wr{
+    height: 200vh;
+    .wrapper{
+      .mTitle{
+        .mainTitle{
+          font-size: 28px;
+        }
+      }
+      .inGrid{
+        .grid{
+          .gridItem{
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 785px) {
+  .wr{
+    .wrapper{
+      .inGrid{
+        .grid{
+          .gridItem{
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 603px) {
+  .wr{
+    .wrapper{
+      .inGrid{
+        .grid{
+          .gridItem{
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .wr{
+    height: auto;
+    .wrapper{
+      .mTitle{
+        .mainTitle{
+          font-size: 26px;
+        }
+      }
+      .inGrid{
+        .grid{
+          .gridItem{
+            height: auto;
+            .gridText{
+            }
+            .gridBtn{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

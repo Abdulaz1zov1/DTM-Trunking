@@ -1,0 +1,402 @@
+.wrapper{
+  position: relative;
+
+  height: 150vh;
+  .partOne{
+    width: 80%;
+    margin-left: 10%;
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 60px;
+
+      .gridItem{
+        height: 45vh;
+        border-radius: 20px;
+        background-color: white;
+        top: -80px;
+        position: relative;
+        z-index: 100;
+        -webkit-box-shadow: 1px 1px 1px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 1px 1px 1px 6px #ccc; /* Firefox 3.5 - 3.6 */
+        box-shadow: 1px 3px 8px 3px #ccc;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+
+
+        .innerIcon{
+          position: relative;
+          color: #CD241D;
+          font-size: 38px;
+          margin-bottom: 20px;
+        }
+        .innerTitle{
+          margin-bottom: 20px;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        .innerText{
+          margin-bottom: 20px;
+          width: 90%;
+          margin-left: 5%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .animation{
+    left: 4vw;
+    height: 95vh;
+    width: 30vw;
+    background: #CD241D;
+    position: absolute;
+    top: 50vh;
+    animation: wave 3s ease-in-out infinite;
+    @keyframes wave {
+      0%, 100% {
+        border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+      }
+      50%{
+        border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+      }
+    }
+    &:nth-child(2){
+      display: none;
+    }
+  }
+  .partTwo{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    .inDisplay{
+        display: flex;
+
+      .left{
+        width: 100%;
+
+
+        .box1{
+          background-image: url("../../public/volwo.jpeg");
+          background-size: cover;
+          height: 65vh;
+          background-position: center;
+          background-position-x: 0px;
+          width: 33vw;
+          border-top-left-radius: 10px;
+          .cover1{
+            background-color: rgba(29,35, 63, 0.4 );
+            z-index: 1000;
+            height: 65vh;
+            width: 100%;
+            border-top-left-radius: 10px;
+
+            //border-radius: 10px;
+          }
+        }
+        .box2{
+          position: relative;
+          background-image: url("../../public/driver1.JPG");
+          background-size: cover;
+          background-position: center;
+          height: 40vh;
+          width: 28vw;
+          left: 8vw;
+          top: -18%;
+          //border-radius: 10px;
+          background-color: #CD241D;
+          .cover2{
+            height: 40vh;
+            background-color: rgba(29,35, 63, 0.4 );
+            width: 100%;
+            //border-radius: 10px;
+          }
+        }
+        .box3{
+          background-color: #CD241D;
+          height: 20vh;
+          width: 15vw;
+          top: -27%;
+          position: relative;
+          left: 24vw;
+          border-radius: 10px;
+          .cover3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .boxTitle{
+              padding-top: 30px;
+              font-size: 28px;
+              font-weight: 600;
+              color: white;
+            }
+            .boxText{
+              font-size: 18px;
+              color: white;
+            }
+          }
+        }
+      }
+      .right{
+        margin-top: 50px;
+        width: 86%;
+        .innerRight{
+          .grayTitle{
+            color: #9EA9B3;
+            text-transform: uppercase;
+            font-size: 20px;
+          }
+          .rightTitle{
+            padding-bottom: 15px;
+            font-size: 38px;
+            font-family:  sans-serif;
+            span{
+              font-weight: bold;
+            }
+          }
+          .rightText1{
+            font-size: 20px;
+            color: #232323;
+            padding-top: 20px;
+          }
+          .rightText2{
+            font-size: 16px;
+            padding-top: 20px;
+            color: #616161;
+          }
+          .checkboxTexts{
+            margin-top: 30px;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .inDisplayCheck{
+              align-items: center;
+              display: flex;
+              .checkIcon{
+                padding-right: 20px;
+                color: #CD241D;
+                font-size: 26px;
+              }
+            }
+          }
+          .btn{
+            border-radius: 10px;
+            margin-top: 40px;
+           background-color: #CD241D;
+            display: inline-block;
+            padding: 20px 40px;
+            .btnDisplay{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .btnText{
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                padding-right: 5px;
+              }
+              .btnIcon{
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .wrapper{
+    .partTwo{
+      .inDisplay{
+        .left{
+          .box3{
+            .cover3{
+
+              .boxTitle{
+                padding-top: 30px;
+                font-size: 26px;
+                font-weight: 600;
+                color: white;
+              }
+              .boxText{
+                font-size: 16px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .wrapper{
+    height: 200vh;
+    padding-bottom: 20px;
+    .animation{
+      left: 4vw;
+      height: 60vh;
+      width: 80vw;
+      background: #CD241D;
+      position: absolute;
+      top: 20vh;
+      animation: wave 10s ease-in-out infinite;
+      @keyframes wave {
+        0%, 100% {
+          border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+        }
+        50%{
+          border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+        }
+      }
+    }
+    .partTwo{
+      .inDisplay{
+        .left{
+          .box3{
+            width: 45%;
+            left: 20vw;
+            .cover3{
+
+              .boxTitle{
+                padding-top: 30px;
+                font-size: 26px;
+                font-weight: 600;
+                color: white;
+              }
+              .boxText{
+                text-align: center;
+                font-size: 16px;
+                color: white;
+              }
+            }
+          }
+        }
+        .right{
+          margin-top: 0;
+          width: 80%;
+          .innerRight{
+
+            .rightTitle{
+              padding-bottom: 15px;
+              font-size: 32px;
+              font-family:  sans-serif;
+              span{
+                font-weight: bold;
+              }
+            }
+            .rightText1{
+              text-align: justify;
+              font-size: 19px;
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 651px) {
+  .wrapper{
+    height: 335vh;
+    .animation{
+      left: 5vw;
+      height: 99vh;
+      width: 90vw;
+      background: #CD241D;
+      position: absolute;
+      top: 20vh;
+      animation: wave 5s ease-in-out infinite;
+      @keyframes wave {
+        0%, 100% {
+          border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+        }
+        50%{
+          border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+        }
+      }
+      &:nth-child(2){
+        display: flex;
+        top: 153vh;
+        height: 85vh;
+        width: 60vw;
+      }
+    }
+
+    .partOne{
+      .grid{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 60px;
+        .gridItem{
+          .innerText{
+            font-size: 18px;
+          }
+          .innerTitle{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .partTwo{
+      .inDisplay{
+        flex-direction: column;
+        .left{
+          height: 100vh;
+          .box1{
+            width: 60%;
+            height: 60vh;
+            .cover1{
+              height: 60vh;
+            }
+          }
+          .box2{
+            height: 40vh;
+            top: -20vh;
+            left: 25vw;
+            width: 40vw;
+          }
+          .box3{
+            top: -30vh;
+            left: 50vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .wrapper{
+    height: 250vh;
+    .animation{
+      &:nth-child(2){
+        display: none;
+      }
+    }
+    .partTwo{
+      .inDisplay{
+        .left{
+          display: none;
+        }
+        .right{
+          width: 90%;
+          .innerRight{
+            .rightTitle{
+              font-size: 24px;
+            }
+            .rightText1{
+              font-size: 18px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}

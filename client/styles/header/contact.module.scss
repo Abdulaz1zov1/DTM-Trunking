@@ -1,0 +1,127 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  background-color: rgba(29, 35, 63, 1);
+  border-bottom: 1px dotted #CD241D;
+
+  .left {
+    display: flex;
+    align-items: center;
+    background-color: #CD241D;
+    width: 60%;
+    transform: skewX(-  35deg);
+
+    .inLeft {
+
+      display: flex;
+      width: 70%;
+      margin-left: 20%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .adress {
+        display: flex;
+        transform: skewX(35deg);
+
+        .contactIcon {
+          color: white;
+          padding-right: 5px;
+        }
+
+        .text {
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+          .phoneNumber{
+            text-decoration: none;
+            color: white;
+            &:hover{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right{
+    display: flex;
+    width: 40%;
+    .inRight{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-left: 40%;
+      .rightIcon{
+        &:hover{
+          cursor: pointer;
+          color: #CD241D;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .wrapper{
+    .left{
+      .inLeft{
+        margin-left: 5%;
+        width: 90%;
+      }
+    }
+  }
+}
+@media (max-width: 969px) {
+  .wrapper{
+    .left{
+      width: 100%;
+    }
+    .right{
+      width: 30%;
+      .inRight{
+        margin-left: 20%;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .wrapper{
+    .left{
+      .inLeft{
+        .adress{
+          &:nth-child(2){
+            .contactIcon{
+              display: none;
+            }
+            .text{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .right{
+      .inRight{
+        margin-left: 10%;
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .wrapper{
+    .left{
+      width: 60%;
+      .inLeft{
+
+        .adress{
+          &:first-child{
+            display: none;
+          }
+
+        }
+      }
+    }
+  }
+}

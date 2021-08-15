@@ -1,0 +1,278 @@
+@import 'styles/constants';
+
+.wr {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .wrapper {
+    -webkit-box-shadow: 1px 1px 1px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 1px 1px 1px 6px #ccc; /* Firefox 3.5 - 3.6 */
+    box-shadow: 1px 3px 8px 3px #ccc;
+    height: auto;
+    padding-bottom: 50px;
+    width: 77%;
+    margin-left: 11.5%;
+
+    .cu {
+
+      .mTitle {
+        color: white;
+        background-color: #1E243F;
+        width: 100%;
+        line-height: 20vh;
+        text-align: center;
+        height: 20vh;
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+
+        span {
+          color: #249133;
+        }
+      }
+
+      .line {
+        background-color: #249133;
+        width: 8%;
+        height: 1px;
+      }
+    }
+
+    .column {
+      padding-left: 40px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+
+      .left {
+        position: relative;
+        width: 95%;
+
+        .inputs {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+          grid-gap: 0px 20px;
+          flex-direction: column;
+
+          .input {
+            // margin-top: 30px;
+            .inputT {
+              height: auto;
+              border: none;
+            }
+            .buttonClass{
+              height: auto;
+              border: none;
+              border-radius: 0%;
+              border-bottom: 2px solid $grayColor;
+              background-color: transparent;
+            }
+            .inputClass{
+              height: 100%;
+              width: 100%;
+              padding: 20px 40px;
+
+
+              background-color: transparent;
+              font-size: 16px;
+              font-family: 'Roboto', sans-serif;
+              color: #263238;
+              margin-bottom: 20px;
+            }
+            .input1 {
+              letter-spacing: 1px;
+              width: 100%;
+              font-size: 14px;
+              padding: 10px 10px;
+              font-family: 'Roboto', sans-serif;
+              color: #263238;
+              margin-bottom: 20px;
+              border: 1px solid #CCCCCC;
+              border-radius: 2px;
+              outline: none;
+              background-color: transparent;
+              &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-size: 14px;
+              }
+              &:nth-child(4){
+                border-bottom: none;
+              }
+            }
+
+            &:nth-child(2) {
+              .input1 {
+                margin-bottom: 10px;
+              }
+            }
+
+
+          }
+        }
+
+        .textarea {
+          .input5 {
+            resize: none;
+            width: 100%;
+            font-size: 14px;
+            border: 1px solid #CCCCCC;
+            outline: none;
+            background-color: transparent;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: #263238;
+            font-family: 'Roboto', sans-serif;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              font-size: 14px;
+            }
+            //    margin-top: 50px;
+          }
+        }
+        .inUploads{
+          display: flex;
+          .uploads{
+
+            .attachCv{
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+
+
+
+              .uploadFile{
+
+              }
+            }
+          }
+          .button{
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon1 {
+              margin-left: 20px;
+            }
+
+
+
+            .btn {
+
+              border: 1px solid #CD241D;
+              color: white;
+              padding: 15px 40px;
+
+              font-weight: 500;
+              background-color: #CD241D;
+
+              .icon {
+                margin-left: 10px;
+                right: 0;
+              }
+
+              transition: all .5s ease-in-out;
+
+              &:hover {
+                background-color: transparent;
+                color: #CD241D;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+
+
+
+
+      }
+      .right{
+        height: auto;
+        width: 40%;
+       .rightImg{
+         background-image: url("../../public/drivers/right.jpg");
+         background-size: cover;
+         background-position: center;
+         height: auto;
+         width: 70%;
+         margin-left: 15%;
+         .overliy{
+           background-color: rgba(29,35, 63, 0.8);
+           height: auto;
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           color: white;
+           .rightTitle{
+             padding-top: 40px;
+             font-size: 26px;
+             font-weight: bold;
+             width: 70%;
+             margin-left: 15%;
+           }
+           .rightText{
+             width: 70%;
+             margin-left: 15%;
+             padding-top: 10px;
+           }
+           .rightBtn{
+             margin-bottom: 40px;
+             margin-top: 83px;
+             margin-left: 40%;
+             display: inline-block;
+             border: 1px solid #CD241D;
+             background: #CD241D;
+             padding: 12px 32px;
+             transition: .3s all ease-in-out;
+             &:hover{
+               cursor: pointer;
+               background: transparent;
+             }
+           }
+         }
+       }
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .wr{
+    .wrapper{
+      .cu{
+        .mTitle{
+          font-size: 28px;
+          height: 15vh;
+          line-height: 15vh;
+        }
+      }
+      .column{
+
+        .left{
+          width: 90%;
+
+        }
+        .right{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .wr{
+    .wrapper{
+      .column{
+        .left{
+           .inUploads{
+             flex-direction: column;
+             justify-content: start;
+             align-items: start;
+             .button{
+               margin-left: 0;
+               margin-top: 15px;
+             }
+           }
+        }
+      }
+    }
+  }
+}
